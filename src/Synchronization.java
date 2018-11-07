@@ -1,4 +1,4 @@
-import java.util.Arrays;
+//Flavien Stemmelen - Thomas De Iseppi
 
 /**
  * Message de synchronisation

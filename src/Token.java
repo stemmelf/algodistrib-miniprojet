@@ -1,3 +1,4 @@
+//Flavien Stemmelen - Thomas De Iseppi
 public class Token {
     private int owner;
 

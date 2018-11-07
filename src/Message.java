@@ -1,3 +1,4 @@
+//Flavien Stemmelen - Thomas De Iseppi
 /**
  * Classe abstraite dont héritent tous les messages qui passe la boite au lettres
  */

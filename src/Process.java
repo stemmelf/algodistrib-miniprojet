@@ -1,3 +1,4 @@
+//Flavien Stemmelen - Thomas De Iseppi
 /**
  * Cette classe représente les process
  */

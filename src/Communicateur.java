@@ -1,10 +1,10 @@
+//Flavien Stemmelen - Thomas De Iseppi
 import com.google.common.eventbus.Subscribe;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import static java.lang.Integer.max;
-
 /**
  * Communicateur lié à un process
  */
@@ -236,7 +236,6 @@ public class Communicateur {
         bus.postEvent(mts);
         int index = -1;
 
-        System.out.println("send avant boucle");
         while (index == -1) {
             try {
                 Thread.sleep(100);
@@ -249,7 +248,6 @@ public class Communicateur {
                 }
             }
         }
-        System.out.println("send après boucle");
 
         int msgClock = this.boiteAuxLettreSync.get(index).getLamport();
         this.boiteAuxLettreSync.remove(index);
@@ -266,7 +264,6 @@ public class Communicateur {
 
         int index = -1;
 
-        System.out.println("recieve avant boucle");
         while (index == -1) {
             for (int i = 0; i < this.boiteAuxLettreSync.size(); i++){
                 if(boiteAuxLettreSync.get(i).from == from){
@@ -279,7 +276,6 @@ public class Communicateur {
                 e.printStackTrace();
             }
         }
-        System.out.println("recieve après boucle");
 
         Object o = this.boiteAuxLettreSync.get(index).getPayload();
         int msgClock = this.boiteAuxLettreSync.get(index).getLamport();

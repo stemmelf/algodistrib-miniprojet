@@ -1,7 +1,8 @@
+//Flavien Stemmelen - Thomas De Iseppi
 import java.util.concurrent.Semaphore;
 
 /**
- * Permet la gestion de l'horloge de Lamport
+ * Gère l'horloge de lamport
  */
 abstract class LamportClock {
     /**
